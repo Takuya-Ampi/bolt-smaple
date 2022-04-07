@@ -5,6 +5,8 @@ const app = new App({
   signingSecret: "3502edded2dea284196431d01ba698a3" // todo env
 });
 
+app.event('reaction_added', async({}))
+
 (async()=>
   {
     //Webアプリの起動

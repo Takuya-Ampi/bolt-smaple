@@ -6,7 +6,7 @@ const app = new App({
 });
 
 app.command('/echo', async({command, ack, say}) => {
-  console.log('aaa')
+  console.log('message:', command.text)
   await ack();
   await say(`echo:${command.text}`)
 })
